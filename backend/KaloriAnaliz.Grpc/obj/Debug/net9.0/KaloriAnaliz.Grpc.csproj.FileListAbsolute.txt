@@ -1,0 +1,12 @@
+C:\Users\MUSTAFA\OneDrive\Masaüstü\KaloriAnaliz\backend\KaloriAnaliz.Grpc\bin\Debug\net9.0\KaloriAnaliz.Grpc.deps.json
+C:\Users\MUSTAFA\OneDrive\Masaüstü\KaloriAnaliz\backend\KaloriAnaliz.Grpc\bin\Debug\net9.0\KaloriAnaliz.Grpc.dll
+C:\Users\MUSTAFA\OneDrive\Masaüstü\KaloriAnaliz\backend\KaloriAnaliz.Grpc\bin\Debug\net9.0\KaloriAnaliz.Grpc.pdb
+C:\Users\MUSTAFA\OneDrive\Masaüstü\KaloriAnaliz\backend\KaloriAnaliz.Grpc\obj\Debug\net9.0\KaloriAnaliz.Grpc.csproj.AssemblyReference.cache
+C:\Users\MUSTAFA\OneDrive\Masaüstü\KaloriAnaliz\backend\KaloriAnaliz.Grpc\obj\Debug\net9.0\KaloriAnaliz.Grpc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MUSTAFA\OneDrive\Masaüstü\KaloriAnaliz\backend\KaloriAnaliz.Grpc\obj\Debug\net9.0\KaloriAnaliz.Grpc.AssemblyInfoInputs.cache
+C:\Users\MUSTAFA\OneDrive\Masaüstü\KaloriAnaliz\backend\KaloriAnaliz.Grpc\obj\Debug\net9.0\KaloriAnaliz.Grpc.AssemblyInfo.cs
+C:\Users\MUSTAFA\OneDrive\Masaüstü\KaloriAnaliz\backend\KaloriAnaliz.Grpc\obj\Debug\net9.0\KaloriAnaliz.Grpc.csproj.CoreCompileInputs.cache
+C:\Users\MUSTAFA\OneDrive\Masaüstü\KaloriAnaliz\backend\KaloriAnaliz.Grpc\obj\Debug\net9.0\KaloriAnaliz.Grpc.dll
+C:\Users\MUSTAFA\OneDrive\Masaüstü\KaloriAnaliz\backend\KaloriAnaliz.Grpc\obj\Debug\net9.0\refint\KaloriAnaliz.Grpc.dll
+C:\Users\MUSTAFA\OneDrive\Masaüstü\KaloriAnaliz\backend\KaloriAnaliz.Grpc\obj\Debug\net9.0\KaloriAnaliz.Grpc.pdb
+C:\Users\MUSTAFA\OneDrive\Masaüstü\KaloriAnaliz\backend\KaloriAnaliz.Grpc\obj\Debug\net9.0\ref\KaloriAnaliz.Grpc.dll

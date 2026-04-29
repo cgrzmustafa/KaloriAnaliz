@@ -1,0 +1,4 @@
+ai/data/
+ai/venv/
+__pycache__/
+*.pt

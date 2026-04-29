@@ -1,0 +1,2 @@
+obj\Debug\net9.0/Kalorianaliz.cs \
+obj\Debug\net9.0/KalorianalizGrpc.cs: ../../proto/kalorianaliz.proto

@@ -1,0 +1,65 @@
+﻿@using KaloriAnaliz.Grpc
+@model PredictResponse
+
+@{
+    ViewData["Title"] = "AI Kalori Analizi";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4"> Yapay Zeka Destekli Kalori Analizi</h2>
+    
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0 bg-light">
+                <div class="card-body p-4">
+                    <form asp-controller="Home" asp-action="Analyze" method="post" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Ne yediğini yaz (Örn: 2 tabak mantı)</label>
+                            <input type="text" class="form-control" name="textInput" placeholder="Sadece metin de girebilirsin...">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label fw-bold">Veya fotoğrafını yükle</label>
+                            <input type="file" class="form-control" name="imageFile" accept="image/*">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 fw-bold py-2">Yapay Zekaya Sor </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (Model != null)
+    {
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div class="alert alert-success shadow-sm border-0">
+                    <h4 class="alert-heading text-center mb-3"> Analiz Sonucu</h4>
+                    <hr>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span><strong>Tespit Edilen Yemek:</strong></span>
+                        <span class="text-capitalize">@Model.FoodName</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span><strong>Hesaplanan Kalori:</strong></span>
+                        <span class="badge bg-danger fs-6">@Model.Calories kcal</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span><strong>AI Güven Skoru:</strong></span>
+                        <span>% @(Math.Round(Model.Confidence * 100, 2))</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span><strong>Karar Kaynağı:</strong></span>
+                        <span class="badge bg-secondary">@Model.Source</span>
+                    </div>
+                    
+                    @if (Model.LowConfidence)
+                    {
+                        <div class="alert alert-warning mt-3 mb-0 text-center">
+                             Uyarı: AI görselden veya metinden tam emin olamadı. Doğruluk oranı düşük olabilir.
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>

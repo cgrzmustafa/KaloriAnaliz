@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option csharp_namespace = "KaloriAnaliz.Grpc";
+
+package kalorianaliz;
+
+message PredictRequest {
+  bytes   image_data    = 1;   
+  string  text_input    = 2;   
+  string  user_id       = 3;
+}
+
+message PredictResponse {
+  string  food_name     = 1;
+  float   confidence    = 2;
+  float   calories      = 3;
+  string  gradcam_b64   = 4;   
+  bool    low_confidence= 5;   
+  string  source        = 6;   
+}
+
+service CalorieService {
+  rpc Predict (PredictRequest) returns (PredictResponse);
+}
